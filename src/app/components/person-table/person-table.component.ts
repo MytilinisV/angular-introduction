@@ -13,7 +13,7 @@ export class PersonTableComponent {
   person = {
     givenName: 'Bill',
     sirName: 'Mytilinis',
-    age: 0x16,
+    age: 0x1C,
     email: 'vasilismitilinis@gmail.com'
   }
 }
