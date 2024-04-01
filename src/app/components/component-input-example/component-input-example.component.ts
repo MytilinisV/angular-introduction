@@ -1,22 +1,17 @@
 import { Component } from '@angular/core';
-import { PersonTableComponent } from './components/person-table/person-table.component';
-import { Person } from './shared/interfaces/person';
-import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { RouterLink, RouterOutlet } from '@angular/router';
-
+import { PersonTableComponent } from '../person-table/person-table.component';
+import { Person } from '../../shared/interfaces/person';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-component-input-example',
   standalone: true,
-  imports: [PersonTableComponent, EventBindExampleComponent, WelcomeComponent, RouterLink, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [PersonTableComponent],
+  templateUrl: './component-input-example.component.html',
+  styleUrl: './component-input-example.component.css'
 })
-export class AppComponent {
-
-
-  person0 = {
+export class ComponentInputExampleComponent {
+person0: Person|undefined;
+  person2 = {
     givenName: 'Bill',
     sirName: 'Mytilinis',
     age: 0x1C,
