@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { EPerson } from '../../shared/interfaces/person';
 import { sortBy } from 'lodash-es';
+
 @Component({
   selector: 'app-single-datatable',
   standalone: true,
