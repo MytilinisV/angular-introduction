@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 
 const DAD_JOKES_API_URL = 'https://icanhazdadjoke.com/';
-const JACK_NORRIS_JOKES_API_URL = 'https://api.chucknorris.io/jokes/random';
+const CHUCK_NORRIS_JOKES_API_URL = 'https://api.chucknorris.io/jokes/random';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class JokesService {
   };
 
   getChuckNorrisJoke() {
-    this.http.get(JACK_NORRIS_JOKES_API_URL, {
+    this.http.get(CHUCK_NORRIS_JOKES_API_URL, {
       headers: {
         Accept: 'application/json',
       },

@@ -11,6 +11,7 @@ import { ComponentOutputExampleComponent } from './components/component-output-e
 import { ApplicationConfig } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
 import { EpersonTemplateDrivenFormExampleComponent } from './components/eperson-template-driven-form-example/eperson-template-driven-form-example.component';
+import { HttpClientExampleComponent } from './components/http-client-example/http-client-example.component';
 
 
 export const routes: Routes = [
@@ -30,6 +31,9 @@ export const routes: Routes = [
       // component: ReactiveFormExampleComponent,
     },
     { path: '', component: WelcomeComponent },
+    { path: 'http-client-example',
+      component: HttpClientExampleComponent
+    }
 ];
 
 export const appConfig: ApplicationConfig = {
