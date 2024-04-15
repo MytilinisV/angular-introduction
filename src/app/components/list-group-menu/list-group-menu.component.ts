@@ -18,6 +18,10 @@ export class ListGroupMenuComponent {
     {text: 'single datatable component', routerLink: 'single-datatable-component'},
     {text: 'HTTP Client Example',
       routerLink: 'http-client-example',
+    },
+    {
+      text: 'User Registration Example',
+      routerLink: 'user-registration-example'
     }
   ]
 };
